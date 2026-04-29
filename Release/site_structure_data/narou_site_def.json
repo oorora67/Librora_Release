@@ -66,5 +66,6 @@
     "a.c-pager__item--last",
     ".c-pager__item--last",
     "a[href*=\"?p=\"]"
-  ]
+  ],
+  "definitionUpdatedAt": "2026-04-29T00:00:00.000Z"
 }
