@@ -1,0 +1,70 @@
+{
+  "titleSelectors": [
+    "h1.p-novel__title",
+    "p.novel_title",
+    ".p-novel__title",
+    ".novel_title",
+    "h1.novel_title",
+    "title",
+    "meta[property=\"og:title\"]"
+  ],
+  "titleSuffixPattern": "\\s*[-–]\\s*小説家になろう.*$",
+  "authorLinkSelectors": [
+    "div.p-novel__author a",
+    ".p-novel__author a",
+    "div.novel_writername a",
+    ".novel_writername a",
+    "a[href*=\"/mypage/\"]",
+    "a[href*=\"/user/\"]"
+  ],
+  "authorContainerSelectors": [
+    "div.p-novel__author",
+    "div.novel_writername",
+    ".p-novel__author",
+    ".novel_writername"
+  ],
+  "authorPrefixPattern": "^作者[：:\\s]*",
+  "authorSuffixPattern": "\\s*さん\\s*$",
+  "synopsisSelectors": [
+    "div#novel_ex.p-novel__summary",
+    "div#novel_ex",
+    "#novel_ex",
+    ".p-novel__summary",
+    ".novel_ex",
+    "div.novel_ex"
+  ],
+  "statusSelector": "span.p-infotop-type__type--serialized, span.p-infotop-type__type--completed",
+  "statusCompletedClass": "--completed",
+  "statusOngoingClass": "--serialized",
+  "statusCompletedTexts": ["完結済", "完結"],
+  "statusOngoingTexts": ["連載中", "連載("],
+  "statusFallbackSelectors": ["#noveltype_notend", ".novel_attention"],
+  "infoEpisodeCountSelector": "span.p-infotop-type__allep",
+  "episodeCountPattern": "全(\\d+)(?:エピソード|話|部分)",
+  "episodeCountPatternOld": "全(\\d+)部分",
+  "episodeCountFallbackSelectors": [".novel_attention", "div.novel_attention"],
+  "shortStorySelectors": [
+    "#novel_honbun",
+    ".p-novel__text--body",
+    ".p-novel__body"
+  ],
+  "infoDataTitleSelector": "dt.p-infotop-data__title",
+  "infoDataValueClass": "p-infotop-data__value",
+  "updateDatePriority": ["最新掲載日", "改稿日", "最終更新日", "掲載日"],
+  "updatedAtSelectors": ["#novel_update", ".novel_update", "meta[name=\"WWWC\"]"],
+  "genreSelectors": ["#noveljyanre", ".novel_genre", "span.genre"],
+  "tagSelectors": ["#novel_keyword", ".novel_keyword"],
+  "tocBoxSelectors": [".p-eplist", ".index_box"],
+  "tocItemsSelector": ".chapter_title, .novel_sublist2, .p-eplist__chapter-title, .p-eplist__sublist",
+  "chapterClasses": ["chapter_title", "p-eplist__chapter-title"],
+  "episodeListClasses": ["novel_sublist2", "p-eplist__sublist"],
+  "episodeLinkSelectors": ["a.p-eplist__subtitle", "a"],
+  "episodeDateSelectors": [".p-eplist__update", ".long_update", ".short_update"],
+  "revisionSpanSelector": "span[title*=\"改稿\"]",
+  "pagerItemsSelector": ".c-pager__item, .pager a",
+  "lastPageLinkSelectors": [
+    "a.c-pager__item--last",
+    ".c-pager__item--last",
+    "a[href*=\"?p=\"]"
+  ]
+}
